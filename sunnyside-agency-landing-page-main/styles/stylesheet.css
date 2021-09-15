@@ -3,12 +3,16 @@
   margin: 0px;
   box-sizing: border-box;
 }
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap");
+/* @font-face {
+  font-family: Barlow;
+  src: url(https://fonts.google.com/specimen/Barlow);
+} */
 
 body {
   width: 100%;
   height: 100vh;
 }
-
 
 header {
   display: flex;
@@ -20,8 +24,10 @@ header {
 #sunnyside1 {
   color: aliceblue;
   margin-left: 3%;
-  font-size: x-large;
-  font-weight: 900;
+  font-size: 1.8rem;
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  font-weight: bold;
 }
 
 #links1 {
@@ -32,12 +38,23 @@ header {
 #hlinks-contact {
   color: black;
   background-color: wheat;
-  border-radius: 1.8rem;  
-    
+  border-radius: 1.8rem;
+}
+#hlinks-contact:hover {
+  background-color: rgba(115, 224, 243, 0.7);
+  color: white;
+  font-weight: bold;
+  font-family: "Barlow", sans-serif;
 }
 
 .hlinks {
   padding: 1%;
+  color: white;
+  font-weight: bold;
+  font-family: "Barlow", sans-serif;
+}
+.hlinks:hover {
+  color: rgba(115, 224, 243, 0.7);
 }
 
 #main-heading {
@@ -54,65 +71,64 @@ header {
   height: 75%;
 }
 
-.d2,.d6{
+.d2,
+.d6 {
   display: flex;
 }
 
-.d2{
+.d2 {
   width: 100%;
   height: 60%;
 }
-.d2-a{
+.d2-a {
   width: 50%;
   display: flex;
   justify-content: center;
   flex-direction: column;
   padding: 5%;
 }
-.d2-b{
+.d2-b {
   width: 50%;
   height: 100%;
   background-image: url("../images/desktop/image-transform.jpg");
   background-size: cover;
-
 }
 
-.dp{
+.dp {
   height: 20%;
   margin-left: 5%;
   margin-right: 5%;
 }
 
-.dh{
-text-align:  center;
-padding-bottom: 4%;
+.dh {
+  text-align: center;
+  padding-bottom: 4%;
 }
-.dp{
+.dp {
   text-align: center;
 }
-.d4{
+.d4 {
   display: flex;
   height: 60%;
 }
-.d3{
+.d3 {
   display: flex;
   height: 50%;
   width: 100%;
 }
-.d3-a{
+.d3-a {
   width: 50%;
   background-image: url("../images/desktop/image-stand-out.jpg");
   background-size: cover;
-  
 }
-.d3-b{
+.d3-b {
   width: 50%;
   display: flex;
   justify-content: center;
   flex-direction: column;
   padding: 5%;
 }
-.d4-a{
+.d4-a {
   background-image: url("../images/desktop/image-graphic-design.jpg");
   background-size: cover;
   display: flex;
@@ -121,9 +137,8 @@ padding-bottom: 4%;
   justify-content: center;
   width: 50%;
   background-repeat: no-repeat;
-
 }
-.d4-b{
+.d4-b {
   background-image: url("../images/desktop/image-photography.jpg");
   display: flex;
   align-items: center;
@@ -134,22 +149,22 @@ padding-bottom: 4%;
   width: 50%;
 }
 
-
-.d6-img{
+.d6-img {
   width: 25%;
   padding: 5px;
+  padding-bottom: 0%;
 }
 
-.testimonials{
+.testimonials {
   width: auto;
   padding-bottom: 5%;
 }
 
-.articles{
+.articles {
   display: flex;
 }
 
-article{
+article {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -157,30 +172,78 @@ article{
   padding: 3%;
 }
 
-
-article > img{
+article > img {
   border-radius: 50%;
 }
 
-article > div{
+article > div {
   padding: 2% 7% 2% 7%;
- 
-}
-article > h2{
-  padding: 2% 0 2% 0;;
 }
 
-
-.tt-h{
-text-align: center;
-padding-top: 3%;
+article > h2 {
+  padding: 2% 0 2% 0;
 }
 
-#d6-img-1{
+.tt-h {
+  text-align: center;
+  padding-top: 3%;
+}
+
+#d6-img-1 {
   padding-left: 0;
 }
-#d6-img-1{
+#d6-img-1 {
   padding-right: 0%;
+}
+
+footer {
+  background-color: rgb(118, 204, 187);
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-contents {
+  height: 80%;
+  width: 100%;
+  text-align: center;
+  color: #458c7e;
+}
+
+.footer-contents > h1 {
+  font-size: 3.2rem;
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50%;
+  color: #458c7e;
+}
+
+.footer-links > a {
+  padding: 2.5%;
+}
+
+i {
+  margin: 1.7%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.footer-links > a:hover {
+  color: white;
+}
+
+.footer-a {
+  color: #458c7e;
+}
+
+svg:hover {
+  color: white;
 }
 
 /* .attribution {
